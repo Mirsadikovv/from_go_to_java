@@ -1,5 +1,6 @@
 package uz.hello_from_go.fignya.user_service.handler;
 
+import org.springframework.stereotype.Component;
 import uz.hello_from_go.fignya.user_service.service.UserService;
 import uz.hello_from_go.fignya.user_service.dto.UserRequestDto;
 import uz.hello_from_go.fignya.user_service.dto.UserResponseDto;
@@ -7,6 +8,7 @@ import uz.hello_from_go.fignya.user_service.dto.UserResponseDto;
 import java.util.List;
 import java.util.Optional;
 
+@Component
 public class UserHandler {
     private final UserService userService;
 

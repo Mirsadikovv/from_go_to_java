@@ -1,5 +1,6 @@
 package uz.hello_from_go.fignya.user_service.service;
 
+import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -9,6 +10,7 @@ import uz.hello_from_go.fignya.user_service.dto.UserRequestDto;
 import uz.hello_from_go.fignya.user_service.dto.UserResponseDto;
 import uz.hello_from_go.fignya.user_service.model.User;
 
+@Service
 public class UserService {
     private final List<User> users = new ArrayList<>();
     private final AtomicLong idCounter = new AtomicLong(1);
